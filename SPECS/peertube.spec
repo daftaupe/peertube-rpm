@@ -67,6 +67,7 @@ fi
 if [ "$1" = 0 ]; then
     userdel -f peertube
     systemctl daemon-reload
+	mv /var/lib/peertube /var/lib/peertube.bkp
 fi
 
 %files
