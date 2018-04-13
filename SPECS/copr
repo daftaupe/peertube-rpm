@@ -1,0 +1,14 @@
+Instructions for copr :
+
+- CentOS you will need RPM Fusion and EPEL repository enabled
+sudo yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+
+In chroot 'epel-7-x86_64'
+
+Packages : 
+devtoolset-7
+
+Repos :
+baseurl=https://rpm.nodesource.com/pub_9.x/el/7/$basearch

@@ -12,7 +12,7 @@ URL:            https://%{repo}
 Source0:        https://%{repo}/releases/download/v%{_version}/%{name}-v%{_version}.zip
 
 Requires:       openssl nodejs >= 8 redis ffmpeg >= 3
-BuildRequires:  npm python2 yarn systemd git
+BuildRequires:  nodejs >= 8 npm python2 yarn systemd git
 
 AutoReq:        no 
 AutoReqProv:    no
@@ -25,6 +25,10 @@ Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly
 
 %build
 cd %{name}-v%{_version}
+if [ %{?dist} == ".el7.centos" ];
+then
+    . /opt/rh/devtoolset-7/enable
+fi
 yarn install --production --pure-lockfile
 
 %install
