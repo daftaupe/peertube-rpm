@@ -12,7 +12,7 @@ URL:            https://%{repo}
 Source0:        https://%{repo}/releases/download/v%{_version}/%{name}-v%{_version}.zip
 
 Requires:       openssl nodejs >= 8 redis ffmpeg >= 3
-BuildRequires:  nodejs >= 8 npm python2 yarn systemd git
+BuildRequires:  nodejs >= 8 python2 yarn systemd git
 
 AutoReq:        no 
 AutoReqProv:    no
