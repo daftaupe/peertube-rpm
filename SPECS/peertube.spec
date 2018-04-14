@@ -4,7 +4,7 @@
 
 Name:           peertube
 Version:        1.0.0beta3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly in the web browser with WebTorrent and Angular
 
 License:        AGPLv3
@@ -82,5 +82,8 @@ fi
 %doc %{name}-v%{_version}/support/doc
 
 %changelog
+* Sat Apr 14 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta3-2
+- Inclusion of CentOS7 specific part
+
 * Thu Apr 12 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta3-1
 - Initial rpm : version 1.0.0-beta3
