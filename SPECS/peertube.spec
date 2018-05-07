@@ -1,10 +1,10 @@
 %define debug_package %{nil}
 %define repo github.com/Chocobozzz/PeerTube
-%define _version 1.0.0-beta.3
+%define _version 1.0.0-beta.4
 
 Name:           peertube
-Version:        1.0.0beta3
-Release:        2%{?dist}
+Version:        1.0.0beta4
+Release:        1%{?dist}
 Summary:        Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly in the web browser with WebTorrent and Angular
 
 License:        AGPLv3
@@ -82,6 +82,9 @@ fi
 %doc %{name}-v%{_version}/support/doc
 
 %changelog
+* Mon May 07 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta4-1
+- Update to version 1.0.0-beta4
+
 * Sat Apr 14 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta3-2
 - Inclusion of CentOS7 specific part
 
