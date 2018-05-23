@@ -1,9 +1,9 @@
 %define debug_package %{nil}
 %define repo github.com/Chocobozzz/PeerTube
-%define _version 1.0.0-beta.4
+%define _version 1.0.0-beta.6
 
 Name:           peertube
-Version:        1.0.0beta4
+Version:        1.0.0beta6
 Release:        1%{?dist}
 Summary:        Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly in the web browser with WebTorrent and Angular
 
@@ -82,6 +82,9 @@ fi
 %doc %{name}-v%{_version}/support/doc
 
 %changelog
+* Wed May 23 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta6-1
+- Update to version 1.0.0-beta6
+
 * Mon May 07 2018 Pierre-Alain TORET <pierre-alain.toret@protonmail.com> 1.0.0-beta4-1
 - Update to version 1.0.0-beta4
 
