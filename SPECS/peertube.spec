@@ -28,8 +28,10 @@ cd %{name}-v%{_version}
 if [ %{?dist} == ".el7" ];
 then
     . /opt/rh/devtoolset-7/enable
+    CC=/opt/rh/devtoolset-7/root/usr/bin/gcc CXX=/opt/rh/devtoolset-7/root/usr/bin/g++ yarn install --production --pure-lockfile
+else
+    yarn install --production --pure-lockfile
 fi
-yarn install --production --pure-lockfile
 
 %install
 mkdir -p %{buildroot}%{_unitdir}
