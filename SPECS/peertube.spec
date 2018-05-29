@@ -25,7 +25,7 @@ Federated (ActivityPub) video streaming platform using P2P (BitTorrent) directly
 
 %build
 cd %{name}-v%{_version}
-if [ %{?dist} == ".el7.centos" ];
+if [ %{?dist} == ".el7" ];
 then
     . /opt/rh/devtoolset-7/enable
 fi
